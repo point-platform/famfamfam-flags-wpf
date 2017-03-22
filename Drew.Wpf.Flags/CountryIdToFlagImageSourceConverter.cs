@@ -79,7 +79,7 @@ namespace Drew.Wpf.Flags
 
             try
             {
-                var path = string.Format("/Drew.Wpf.Flags;component/FlagImages/{0}.png", countryId.ToLower());
+                var path = $"/Drew.Wpf.Flags;component/FlagImages/{countryId.ToLower()}.png";
                 var uri = new Uri(path, UriKind.Relative);
                 var resourceStream = Application.GetResourceStream(uri);
                 if (resourceStream == null)
