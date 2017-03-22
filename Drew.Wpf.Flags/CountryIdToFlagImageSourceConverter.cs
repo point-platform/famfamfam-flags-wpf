@@ -17,7 +17,7 @@ namespace Drew.Wpf.Flags
     /// Provides an image source for the flag of a country, as specified via the country's two letter ISO code.
     /// </summary>
     /// <remarks>
-    /// Flag images used by this converter have been provided by FamFamFam and are publicaly available at:
+    /// Flag images used by this converter have been provided by FamFamFam and are publicly available at:
     /// http://www.famfamfam.com/lab/icons/flags/
     /// </remarks>
     /// <example>
