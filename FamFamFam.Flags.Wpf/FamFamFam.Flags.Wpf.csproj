@@ -3,11 +3,22 @@
     <TargetFramework>net35</TargetFramework>
     <Copyright>Drew Noakes 2009-2017</Copyright>
     <Authors>Drew Noakes, Mark James</Authors>
+    <Summary>Easily display country flags in WPF.</Summary>
     <Description>Provides a WPF value converter that converts an ISO 3166-1 alpha-2 country code into a WPF Image of that country's flag.</Description>
     <PackageId>FamFamFam.Flags.Wpf</PackageId>
+    <VersionPrefix>1.0.0</VersionPrefix>
     <Company />
     <Product>FamFamFam.Flags.Wpf</Product>
     <PackageProjectUrl>https://github.com/drewnoakes/famfamfam-flags-wpf</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/drewnoakes/famfamfam-flags-wpf.git</RepositoryUrl>
+    <PackageIconUrl />
+    <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <PackageTags>wpf;famfamfam;icons;flags;flag icons</PackageTags>
+    <DebugType>portable</DebugType>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
