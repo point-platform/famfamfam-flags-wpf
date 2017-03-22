@@ -9,7 +9,7 @@
     Width="385"
     WindowStyle="SingleBorderWindow">
 
-    <ItemsControl ItemsSource="{Binding Source={x:Static Flags:CountryIdToFlagImageSourceConverter.AllCountryIds}}">
+    <ItemsControl ItemsSource="{Binding Source={x:Static Flags:CountryIdToFlagImageSourceConverter.AllCountryIds}}" UseLayoutRounding="True">
 
         <ItemsControl.Resources>
 
@@ -18,7 +18,7 @@
 
             <!-- A template for each CountryId string -->
             <DataTemplate DataType="{x:Type System:String}">
-                <Image Source="{Binding Converter={StaticResource CountryIdToFlagImageSourceConverter}}" Stretch="None" Width="23" Height="18">
+                <Image Source="{Binding Converter={StaticResource CountryIdToFlagImageSourceConverter}}" Stretch="None" Width="23" Height="18" RenderOptions.BitmapScalingMode="HighQuality">
                     <Image.ToolTip>
                         <TextBlock Text="{Binding}"/>
                     </Image.ToolTip>
