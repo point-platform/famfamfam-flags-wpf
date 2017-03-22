@@ -1,8 +1,8 @@
 ﻿<Window
-    x:Class="Drew.Wpf.Flags.Demo.FlagDemoWindow"
+    x:Class="FamFamFam.Flags.Wpf.Demo.FlagDemoWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:Flags="clr-namespace:Drew.Wpf.Flags;assembly=Drew.Wpf.Flags"
+    xmlns:Flags="clr-namespace:FamFamFam.Flags.Wpf;assembly=FamFamFam.Flags.Wpf"
     xmlns:System="clr-namespace:System;assembly=mscorlib"
     Title="Flags in WPF"
     Height="329"

@@ -1,4 +1,4 @@
-﻿namespace Drew.Wpf.Flags.Demo
+﻿namespace FamFamFam.Flags.Wpf.Demo
 {
     public partial class FlagDemoWindow
     {

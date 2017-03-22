@@ -11,7 +11,7 @@ using System.Windows;
 using System.Windows.Data;
 using System.Windows.Media.Imaging;
 
-namespace Drew.Wpf.Flags
+namespace FamFamFam.Flags.Wpf
 {
     /// <summary>
     /// Provides an image source for the flag of a country, as specified via the country's two letter ISO code.
