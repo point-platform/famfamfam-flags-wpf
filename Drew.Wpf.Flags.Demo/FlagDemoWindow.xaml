@@ -5,7 +5,7 @@
     xmlns:Flags="clr-namespace:Drew.Wpf.Flags;assembly=Drew.Wpf.Flags"
     xmlns:System="clr-namespace:System;assembly=mscorlib"
     Title="Flags in WPF"
-    Height="325"
+    Height="329"
     Width="385"
     WindowStyle="SingleBorderWindow">
 
