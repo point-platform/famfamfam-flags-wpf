@@ -37,7 +37,7 @@ namespace FamFamFam.Flags.Wpf
     /// And the XML namespace <c>Flags</c> defined as:
     /// <code>
     /// <![CDATA[
-    /// xmlns:Flags="clr-namespace:Drew.Wpf.Flags;assembly=Drew.Wpf.Flags"
+    /// xmlns:Flags="clr-namespace:FamFamFam.Flags.Wpf;assembly=FamFamFam.Flags.Wpf"
     /// ]]>
     /// </code>
     /// </example>
@@ -79,7 +79,7 @@ namespace FamFamFam.Flags.Wpf
 
             try
             {
-                var path = $"/Drew.Wpf.Flags;component/Images/{countryId.ToLower()}.png";
+                var path = $"/FamFamFam.Flags.Wpf;component/Images/{countryId.ToLower()}.png";
                 var uri = new Uri(path, UriKind.Relative);
                 var resourceStream = Application.GetResourceStream(uri);
                 if (resourceStream == null)
