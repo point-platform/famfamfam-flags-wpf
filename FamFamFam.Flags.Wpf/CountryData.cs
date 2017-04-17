@@ -290,7 +290,14 @@ namespace FamFamFam.Flags.Wpf
         /// <returns><c>true</c> if the name was found, otherwise <c>false</c>.</returns>
         public static bool TryGetName(string iso2, out string name) => _englishNameByIso2.TryGetValue(iso2, out name);
 
+        /// <summary>
+        /// The country's identifier, according to ISO 3166-1 alpha-2.
+        /// </summary>
         public string Iso2 { get; }
+
+        /// <summary>
+        /// The country's common name, in English.
+        /// </summary>
         public string Name { get; }
 
         private CountryData(string iso2, string name)
