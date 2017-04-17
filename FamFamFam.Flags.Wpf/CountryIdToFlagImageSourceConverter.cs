@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 namespace FamFamFam.Flags.Wpf
 {
     /// <summary>
-    /// Provides an image source for the flag of a country, as specified via the country's two letter ISO code.
+    /// Provides an image source for the flag of a country, as specified via the country's two letter ISO 3166-1 alpha-2 code.
     /// </summary>
     /// <remarks>
     /// Flag images used by this converter have been provided by FamFamFam and are publicly available at:

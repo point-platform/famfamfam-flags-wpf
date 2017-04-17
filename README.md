@@ -14,7 +14,7 @@ Source from [NuGet](https://www.nuget.org/packages/FamFamFam.Flags.Wpf/):
 
 ## Usage
 
-The following code creates an image of flag that corresonds to the [two letter ISO country
+The following code creates an image of flag that corresonds to the [two letter ISO 3166-1 alpha-2 country
 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) that is resolved by the binding expression.
 Note that you may have to include a path in your binding, depending upon the structure of your `DataContext`.
 
