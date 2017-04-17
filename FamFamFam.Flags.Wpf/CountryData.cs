@@ -37,6 +37,7 @@ namespace FamFamFam.Flags.Wpf
                     yield return AllCountryIdsString.Substring(startIndex, endIndex - startIndex);
                     startIndex = endIndex + 1;
                 }
+                yield return AllCountryIdsString.Substring(startIndex, AllCountryIdsString.Length - startIndex);
             }
         }
     }
