@@ -5,35 +5,59 @@
     xmlns:flags="clr-namespace:FamFamFam.Flags.Wpf;assembly=FamFamFam.Flags.Wpf"
     xmlns:system="clr-namespace:System;assembly=mscorlib"
     Title="Flags in WPF"
-    Height="329"
-    Width="385"
+    Height="349"
+    Width="395"
     WindowStyle="SingleBorderWindow">
 
-  <ItemsControl ItemsSource="{Binding Source={x:Static flags:CountryData.AllCountryIds}}" UseLayoutRounding="True">
+  <Window.Resources>
 
-    <ItemsControl.Resources>
+    <!-- An instance of the converter being used -->
+    <flags:CountryIdToFlagImageSourceConverter x:Key="CountryIdToFlagImageSourceConverter" />
 
-      <!-- An instance of the converter being used -->
-      <flags:CountryIdToFlagImageSourceConverter x:Key="CountryIdToFlagImageSourceConverter" />
+  </Window.Resources>
 
-      <!-- A template for each CountryId string -->
-      <DataTemplate DataType="{x:Type system:String}">
-        <Image Source="{Binding Converter={StaticResource CountryIdToFlagImageSourceConverter}}" Stretch="None" Width="23" Height="18" RenderOptions.BitmapScalingMode="HighQuality">
-          <Image.ToolTip>
-            <TextBlock Text="{Binding}"/>
-          </Image.ToolTip>
-        </Image>
-      </DataTemplate>
+  <StackPanel Margin="5">
 
-    </ItemsControl.Resources>
+    <ComboBox ItemsSource="{Binding Source={x:Static flags:CountryData.AllCountries}}" UseLayoutRounding="True" SelectedIndex="12" Margin="0,0,0,5">
+      <ComboBox.ItemTemplate>
+        <DataTemplate DataType="flags:CountryData">
+          <Grid>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="23" />
+              <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Source="{Binding Path=Iso2, Converter={StaticResource CountryIdToFlagImageSourceConverter}}" Stretch="None" Width="23" Height="18" RenderOptions.BitmapScalingMode="HighQuality" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <TextBlock Grid.Column="1" Text="{Binding Path=Name}" VerticalAlignment="Center" />
+          </Grid>
+        </DataTemplate>
+      </ComboBox.ItemTemplate>
+    </ComboBox>
 
-    <!-- Specify that items within the control should wrap to fill the available space -->
-    <ItemsControl.ItemsPanel>
-      <ItemsPanelTemplate>
-        <WrapPanel />
-      </ItemsPanelTemplate>
-    </ItemsControl.ItemsPanel>
 
-  </ItemsControl>
+    <ItemsControl ItemsSource="{Binding Source={x:Static flags:CountryData.AllCountryIds}}" UseLayoutRounding="True">
+
+      <ItemsControl.Resources>
+
+        <!-- A template for each CountryId string -->
+        <DataTemplate DataType="{x:Type system:String}">
+          <Image Source="{Binding Converter={StaticResource CountryIdToFlagImageSourceConverter}}" Stretch="None" Width="23" Height="18" RenderOptions.BitmapScalingMode="HighQuality">
+            <Image.ToolTip>
+              <TextBlock Text="{Binding}"/>
+            </Image.ToolTip>
+          </Image>
+        </DataTemplate>
+
+      </ItemsControl.Resources>
+
+      <!-- Specify that items within the control should wrap to fill the available space -->
+      <ItemsControl.ItemsPanel>
+        <ItemsPanelTemplate>
+          <WrapPanel />
+        </ItemsPanelTemplate>
+      </ItemsControl.ItemsPanel>
+
+    </ItemsControl>
+
+  </StackPanel>
 
 </Window>
