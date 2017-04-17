@@ -1,7 +1,7 @@
 ﻿/*
  * Created by Drew Noakes
  * 20 May 2009
- * http://drewnoakes.com
+ * https://drewnoakes.com
  */
 
 using System;
