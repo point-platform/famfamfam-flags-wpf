@@ -2,38 +2,38 @@
     x:Class="FamFamFam.Flags.Wpf.Demo.FlagDemoWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:Flags="clr-namespace:FamFamFam.Flags.Wpf;assembly=FamFamFam.Flags.Wpf"
-    xmlns:System="clr-namespace:System;assembly=mscorlib"
+    xmlns:flags="clr-namespace:FamFamFam.Flags.Wpf;assembly=FamFamFam.Flags.Wpf"
+    xmlns:system="clr-namespace:System;assembly=mscorlib"
     Title="Flags in WPF"
     Height="329"
     Width="385"
     WindowStyle="SingleBorderWindow">
 
-    <ItemsControl ItemsSource="{Binding Source={x:Static Flags:CountryIdToFlagImageSourceConverter.AllCountryIds}}" UseLayoutRounding="True">
+  <ItemsControl ItemsSource="{Binding Source={x:Static flags:CountryData.AllCountryIds}}" UseLayoutRounding="True">
 
-        <ItemsControl.Resources>
+    <ItemsControl.Resources>
 
-            <!-- An instance of the converter being used -->
-            <Flags:CountryIdToFlagImageSourceConverter x:Key="CountryIdToFlagImageSourceConverter" />
+      <!-- An instance of the converter being used -->
+      <flags:CountryIdToFlagImageSourceConverter x:Key="CountryIdToFlagImageSourceConverter" />
 
-            <!-- A template for each CountryId string -->
-            <DataTemplate DataType="{x:Type System:String}">
-                <Image Source="{Binding Converter={StaticResource CountryIdToFlagImageSourceConverter}}" Stretch="None" Width="23" Height="18" RenderOptions.BitmapScalingMode="HighQuality">
-                    <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
-                    </Image.ToolTip>
-                </Image>
-            </DataTemplate>
+      <!-- A template for each CountryId string -->
+      <DataTemplate DataType="{x:Type system:String}">
+        <Image Source="{Binding Converter={StaticResource CountryIdToFlagImageSourceConverter}}" Stretch="None" Width="23" Height="18" RenderOptions.BitmapScalingMode="HighQuality">
+          <Image.ToolTip>
+            <TextBlock Text="{Binding}"/>
+          </Image.ToolTip>
+        </Image>
+      </DataTemplate>
 
-        </ItemsControl.Resources>
+    </ItemsControl.Resources>
 
-        <!-- Specify that items within the control should wrap to fill the available space -->
-        <ItemsControl.ItemsPanel>
-            <ItemsPanelTemplate>
-                <WrapPanel />
-            </ItemsPanelTemplate>
-        </ItemsControl.ItemsPanel>
+    <!-- Specify that items within the control should wrap to fill the available space -->
+    <ItemsControl.ItemsPanel>
+      <ItemsPanelTemplate>
+        <WrapPanel />
+      </ItemsPanelTemplate>
+    </ItemsControl.ItemsPanel>
 
-    </ItemsControl>
+  </ItemsControl>
 
 </Window>
