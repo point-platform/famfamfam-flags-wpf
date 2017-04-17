@@ -41,6 +41,26 @@ xmlns:Flags="clr-namespace:FamFamFam.Flags.Wpf;assembly=FamFamFam.Flags.Wpf"
 If images appear blurry, set `UseLayoutRounding` to `true` on a parent element, and be sure to use
 `RenderOptions.BitmapScalingMode="HighQuality"` on the `<Image>` itself.
 
+You could show a `ComboBox` of country flags and names using the following code:
+
+```xaml
+<ComboBox ItemsSource="{Binding Source={x:Static flags:CountryData.AllCountries}}">
+  <ComboBox.ItemTemplate>
+    <DataTemplate DataType="flags:CountryData">
+      <StackPanel Orientation="Horizontal">
+        <Image Source="{Binding Path=Iso2, Converter={StaticResource CountryIdToFlagImageSourceConverter}}"
+               Stretch="None" Width="23" Height="18" RenderOptions.BitmapScalingMode="HighQuality" />
+        <TextBlock Text="{Binding Path=Name}" Margin="5,0,0,0" VerticalAlignment="Center" />
+      </StackPanel>
+    </DataTemplate>
+  </ComboBox.ItemTemplate>
+</ComboBox>
+```
+
+The result would resemble:
+
+![Example flag output](combobox.png)
+
 ## Credits
 
 The flag icons were created by Mark James as the [famfamfam flag icon set](http://www.famfamfam.com/lab/icons/flags/),
