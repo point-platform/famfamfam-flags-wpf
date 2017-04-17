@@ -21,14 +21,10 @@
     <ComboBox ItemsSource="{Binding Source={x:Static flags:CountryData.AllCountries}}" UseLayoutRounding="True" SelectedIndex="12" Margin="0,0,0,5">
       <ComboBox.ItemTemplate>
         <DataTemplate DataType="flags:CountryData">
-          <Grid>
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="23" />
-              <ColumnDefinition Width="Auto" />
-            </Grid.ColumnDefinitions>
-            <Image Grid.Column="0" Source="{Binding Path=Iso2, Converter={StaticResource CountryIdToFlagImageSourceConverter}}" Stretch="None" Width="23" Height="18" RenderOptions.BitmapScalingMode="HighQuality" HorizontalAlignment="Left" VerticalAlignment="Center" />
-            <TextBlock Grid.Column="1" Text="{Binding Path=Name}" VerticalAlignment="Center" />
-          </Grid>
+          <StackPanel Orientation="Horizontal">
+            <Image Source="{Binding Path=Iso2, Converter={StaticResource CountryIdToFlagImageSourceConverter}}" Stretch="None" Width="23" Height="18" RenderOptions.BitmapScalingMode="HighQuality" VerticalAlignment="Center" />
+            <TextBlock Text="{Binding Path=Name}" Margin="5,0,0,0" VerticalAlignment="Center" />
+          </StackPanel>
         </DataTemplate>
       </ComboBox.ItemTemplate>
     </ComboBox>
