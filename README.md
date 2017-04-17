@@ -61,6 +61,29 @@ The result would resemble:
 
 ![Example flag output](combobox.png)
 
+## Coverage
+
+As noted in `CountryData.cs`:
+
+* FamFamFam Flags includes images for non-ISO 3166-1 entities
+  * `an`
+  * `catalonia`
+  * `cs`
+  * `en`
+  * `eu`
+  * `scotland`
+  * `wales`
+* FamFamFam Flags doesn't cover ISO 3166-1 entities:
+  * `aq` (Antarctica)
+  * `bq` (Bonaire, Sint Eustatius and Saba)
+  * `cw` (Curaçao)
+  * `im` (Isle of Man)
+  * `je` (Jersey)
+  * `bl` (Saint Barthélemy)
+  * `mf` (Saint Martin (French part))
+  * `sx` (Sint Maarten (Dutch part))
+  * `ss` (South Sudan)
+
 ## Credits
 
 The flag icons were created by Mark James as the [famfamfam flag icon set](http://www.famfamfam.com/lab/icons/flags/),
