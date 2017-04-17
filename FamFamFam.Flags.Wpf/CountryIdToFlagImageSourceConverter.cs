@@ -42,6 +42,7 @@ namespace FamFamFam.Flags.Wpf
     /// </example>
     public sealed class CountryIdToFlagImageSourceConverter : IValueConverter
     {
+        /// <inheritdoc />
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             var countryId = value as string;
@@ -69,6 +70,7 @@ namespace FamFamFam.Flags.Wpf
             }
         }
 
+        /// <inheritdoc />
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
             throw new NotSupportedException();
