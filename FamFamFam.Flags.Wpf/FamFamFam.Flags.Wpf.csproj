@@ -6,7 +6,7 @@
     <Summary>Easily display country flags in WPF.</Summary>
     <Description>Provides a WPF value converter that converts an ISO 3166-1 alpha-2 country code into a WPF Image of that country's flag.</Description>
     <PackageId>FamFamFam.Flags.Wpf</PackageId>
-    <VersionPrefix>1.1.1</VersionPrefix>
+    <VersionPrefix>1.1.2</VersionPrefix>
     <Company />
     <Product>FamFamFam.Flags.Wpf</Product>
     <PackageProjectUrl>https://github.com/drewnoakes/famfamfam-flags-wpf</PackageProjectUrl>
