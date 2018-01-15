@@ -76,13 +76,15 @@ As noted in `CountryData.cs`:
 * FamFamFam Flags doesn't cover ISO 3166-1 entities:
   * `aq` (Antarctica)
   * `bq` (Bonaire, Sint Eustatius and Saba)
-  * `cw` (Curaçao)
+  * ~~~`cw` (Curaçao)~~~
   * `im` (Isle of Man)
   * `je` (Jersey)
   * `bl` (Saint Barthélemy)
   * `mf` (Saint Martin (French part))
   * `sx` (Sint Maarten (Dutch part))
   * `ss` (South Sudan)
+
+The `cw` (Curaçao) flag was [provided by @serdam55](https://github.com/point-platform/famfamfam-flags-wpf/issues/1).
 
 ## Credits
 

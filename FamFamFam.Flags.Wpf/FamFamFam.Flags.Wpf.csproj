@@ -79,6 +79,7 @@
     <Resource Include="Images\cs.png" />
     <Resource Include="Images\cu.png" />
     <Resource Include="Images\cv.png" />
+    <Resource Include="Images\cw.png" />
     <Resource Include="Images\cx.png" />
     <Resource Include="Images\cy.png" />
     <Resource Include="Images\cz.png" />

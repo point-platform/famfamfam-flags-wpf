@@ -22,7 +22,6 @@ namespace FamFamFam.Flags.Wpf
 
 //            {"AQ", "Antarctica"},
 //            {"BQ", "Bonaire, Sint Eustatius and Saba"},
-//            {"CW", "Curaçao"},
 //            {"IM", "Isle of Man"},
 //            {"JE", "Jersey"},
 //            {"BL", "Saint Barthélemy"},
@@ -85,6 +84,7 @@ namespace FamFamFam.Flags.Wpf
             {"CI", "Côte d'Ivoire"},
             {"HR", "Croatia"},
             {"CU", "Cuba"},
+            {"CW", "Curaçao"},
             {"CY", "Cyprus"},
             {"CZ", "Czech Republic"},
             {"DK", "Denmark"},
