@@ -13,7 +13,7 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/drewnoakes/famfamfam-flags-wpf.git</RepositoryUrl>
     <PackageIconUrl>https://github.com/drewnoakes/famfamfam-flags-wpf/raw/master/logo.png</PackageIconUrl>
-    <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageTags>wpf;famfamfam;icons;flags;flag icons</PackageTags>
     <DebugType>portable</DebugType>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
