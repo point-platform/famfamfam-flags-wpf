@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <TargetFrameworks>net35;netcoreapp3.0</TargetFrameworks>
-    <Copyright>Drew Noakes 2009-2017</Copyright>
+    <Copyright>Drew Noakes 2009-2019</Copyright>
     <Authors>Drew Noakes, Mark James</Authors>
     <Summary>Easily display country flags in WPF.</Summary>
     <Description>Provides a WPF value converter that converts an ISO 3166-1 alpha-2 country code into a WPF Image of that country's flag.</Description>
