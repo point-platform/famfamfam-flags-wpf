@@ -1,6 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <TargetFrameworks>net35;netcoreapp3.0</TargetFrameworks>
+    <UseWPF>True</UseWPF>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <Copyright>Drew Noakes 2009-2019</Copyright>
     <Authors>Drew Noakes, Mark James</Authors>
     <Summary>Easily display country flags in WPF.</Summary>
@@ -19,7 +23,6 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
-    <UseWPF>True</UseWPF>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net35'">
